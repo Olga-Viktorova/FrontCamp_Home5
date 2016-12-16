@@ -39,8 +39,7 @@ namespace FrontCamp_HomeTask5
 
       Console.ReadLine();
     }
-
-
+    
     //Task 4
     private static async Task GetBestClass()
     {
@@ -49,30 +48,18 @@ namespace FrontCamp_HomeTask5
       var database = client.GetDatabase("grades");
 
       var collection = database.GetCollection<BsonDocument>("grades");
-      var filter = Builders<BsonDocument>.Filter;
-     
 
-      //var aggregate = collection.Aggregate()
-      //  .Group(new BsonDocument { { "_id", "$class_id" }, { "count", new BsonDocument("$sum", 1) } })
-      //  .Group(new BsonDocument { { "_id", "$student_id" }, { "avrScores", new BsonDocument("$avg", "$scores") } })
-      //  .Unwind<BsonDocument>(new BsonDocument {{ "_id", "$scores" }});
-      //  //.Match(new BsonDocument { { "borough", "Queens" }, { "cuisine", "Brazilian" } })
+      var filter = Builders<BsonDocument>.Filter.Ne("scores.type", "quiz");
+      var aggregate = collection.Aggregate().Unwind("scores").Match(filter)
+        .Group(new BsonDocument { { "_id", new BsonDocument { { "class_id", "$class_id" }, { "student_id", "$student_id" } } }, { "studAverage", new BsonDocument("$avg", "$scores.score") } })
+        .Group(new BsonDocument { { "_id", "$_id.class_id" }, { "classAverage", new BsonDocument("$avg", "$studAverage") } }).Sort(Builders<BsonDocument>.Sort.Descending("classAverage"));
 
-      var aggregate1 = collection.Aggregate()
-        .Unwind("scores")
-        .Group(new BsonDocument { { "_id", "$class_id" }, { "count", new BsonDocument("$sum", 1) } });
-        //.Group(new BsonDocument { { "_id", "$student_id" }, { "avrScore", new BsonDocument("$avg", "$score") } });
-       
-
-
-      var results = await aggregate1.ToListAsync();
-
+      var results = await aggregate.ToListAsync();
+      Console.WriteLine("Classes by best perfomance");
       foreach (var c in results)
         Console.WriteLine(c);
 
     }
-
-
 
     private static async Task CreateDocs(IMongoDatabase database)
     {
