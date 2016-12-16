@@ -1,0 +1,15 @@
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\FrontCamp_HomeTask5.exe.config
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\FrontCamp_HomeTask5.exe
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\FrontCamp_HomeTask5.pdb
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\MongoDB.Bson.dll
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\MongoDB.Driver.Core.dll
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\MongoDB.Driver.dll
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\MongoDB.Driver.Legacy.dll
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\MongoDB.Bson.xml
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\MongoDB.Driver.xml
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\MongoDB.Driver.Core.xml
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\bin\Debug\MongoDB.Driver.Legacy.xml
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\obj\Debug\FrontCamp_HomeTask5.csprojResolveAssemblyReference.cache
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\obj\Debug\FrontCamp_HomeTask5.exe
+D:\Mentoring programm\FrontCamp\FrontCamp_Home5\FrontCamp_HomeTask5\FrontCamp_HomeTask5\obj\Debug\FrontCamp_HomeTask5.pdb
